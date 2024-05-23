@@ -24,9 +24,7 @@ app.get("/noAuth", async (req, res) => {
     res.status(404).send(error.message);//in summary, the code is handling a situation where a requested resource is not found (404 status) and sending an error message back to the client. The error message is derived from the error object, specifically its message property.
   }
 });
-  //TODO 2: Use axios to hit up the /random endpoint
-  //The data you get back should be sent to the ejs file as "content"
-  //Hint: make sure you use JSON.stringify to turn the JS object from axios into a string.
+ 
 
 
 app.get("/basicAuth", async (req, res) => {
